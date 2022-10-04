@@ -1,0 +1,113 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Oswald:wght@200&display=swap'); */
+
+* {
+    padding: o;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: rgb(49, 49, 49);
+    /* box-shadow: 0px 3px 10px #6f6f6f; */
+    height: 3em;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5eem 6rem;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 180x;
+    height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+/* menu na vertical um do lado do outro  */
+
+.nav-item {
+    margin: 0px 12px;
+    border-radius: 5px;
+    background-color: #006af7;
+    padding: 0.4rem;
+}
+
+.nav-link {
+    margin: 0px 12px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.menu-mobile-icon {
+    display: none;
+}
+
+.menu-mobile-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.a:hover {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-list {
+        display: none;
+    }
+    .menu-mobile-icon {
+        display: block;
+    }
+    .menu-mobile {
+        margin-top: -6px;
+    }
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(49, 49, 49);
+        padding-bottom: 1rem;
+    }
+    .menu-mobile .menu-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .menu-mobile .menu-link {
+        text-decoration: none;
+        font-size: 1.15rem;
+        color: #fff;
+        font-weight: 400;
+    }
+    .open {
+        display: block;
+    }
+    .banner {
+        display: none;
+    }
+}
